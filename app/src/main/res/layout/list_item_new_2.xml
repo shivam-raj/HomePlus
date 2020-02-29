@@ -1,0 +1,194 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="8dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/device_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/ic_device_offline"
+            app:layout_constraintEnd_toStartOf="@+id/firstTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/device_rename"
+            android:layout_width="55dp"
+            android:layout_height="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="6dp"
+            android:foregroundGravity="right"
+            android:scaleX="1.2"
+            android:scaleY="1.2"
+            android:src="@drawable/ic_rename"
+            app:layout_constraintBottom_toBottomOf="@+id/firstTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/firstTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ListItem"
+            android:layout_width="214dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@fonts/productsansbold"
+            android:text="Name"
+            android:textColor="#01579B"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toStartOf="@+id/device_rename"
+            app:layout_constraintStart_toEndOf="@+id/device_status"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ListItem">
+
+            <LinearLayout
+                android:id="@+id/control"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/master_control"
+                    android:layout_width="80dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="170dp"
+                    android:layout_marginBottom="6dp"
+                    android:foregroundGravity="right"
+                    android:paddingLeft="40dp"
+                    android:scaleX="0.8"
+                    android:scaleY="0.8"
+                    android:src="@drawable/ic_flash_off"
+                    tools:layout_editor_absoluteX="236dp"
+                    tools:layout_editor_absoluteY="14dp" />
+
+                <TextView
+                    android:id="@+id/callTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@fonts/productsansbold"
+                    android:text="Master Control"
+                    android:textColor="#1565C0"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/app_add"
+                    android:layout_width="88dp"
+                    android:layout_height="39dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="94dp"
+                    android:layout_marginBottom="6dp"
+                    android:foregroundGravity="right"
+                    android:paddingLeft="40dp"
+                    android:scaleX="0.75"
+                    android:scaleY="0.75"
+                    android:src="@drawable/ic_add"
+                    tools:layout_editor_absoluteX="236dp"
+                    tools:layout_editor_absoluteY="14dp" />
+
+                <TextView
+                    android:id="@+id/messageTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@fonts/productsansbold"
+                    android:text="Add Appliance"
+                    android:textColor="#1565C0"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delete"
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="200dp"
+                tools:layout_editor_absoluteY="142dp">
+
+                <ImageView
+                    android:id="@+id/group_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="6dp"
+                    android:foregroundGravity="center"
+                    android:paddingEnd="0dp"
+                    android:src="@drawable/del"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="350dp" />
+
+                <TextView
+                    android:id="@+id/paymentTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@fonts/productsansbold"
+                    android:text="Delete"
+                    android:textColor="#1565C0"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

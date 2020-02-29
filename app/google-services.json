@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "874107366842",
+    "firebase_url": "https://home-plus-8f57b.firebaseio.com",
+    "project_id": "home-plus-8f57b",
+    "storage_bucket": "home-plus-8f57b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874107366842:android:17da8c44678c7436",
+        "android_client_info": {
+          "package_name": "com.ampereplus.homeplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874107366842-ab2qtvhngstvgv12qtr6du4ums43lakv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ampereplus.homeplus",
+            "certificate_hash": "27c3f260e27bc989dd64af876214e601b4e44f64"
+          }
+        },
+        {
+          "client_id": "874107366842-gm1hrlge052g9pf6mprl1mvt735kj379.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ampereplus.homeplus",
+            "certificate_hash": "ea909b1b90eaf1d87d0a5202a6b0d7643776dc56"
+          }
+        },
+        {
+          "client_id": "874107366842-j5a4tvqp3rqe8hr95p28hegmogtg0srk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ampereplus.homeplus",
+            "certificate_hash": "5891da59590648b7125f2a44a9024700b2c41226"
+          }
+        },
+        {
+          "client_id": "874107366842-bgbmtdlf1ptdi9qdu17lef450vc9v5jd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ampereplus.homeplus",
+            "certificate_hash": "caf7dc4a7d971f9f87d9303cf8b8a949f3a87e08"
+          }
+        },
+        {
+          "client_id": "874107366842-93fk9gmese2e3s418nnjmdi1od26j72h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfetPZ6qCvWJ5SZCcPq95KzK4ZKy17M5g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874107366842-93fk9gmese2e3s418nnjmdi1od26j72h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
